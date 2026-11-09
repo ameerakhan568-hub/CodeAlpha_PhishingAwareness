@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Phishing Awareness Training</title>
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--text:#1b1f2a;--muted:#5b6475;--accent:#0b6e4f;--bad:#b42318;--good:#067647;--border:#dfe3ec;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#10141c;--card:#1a2030;--text:#eef1f7;--muted:#a3adc2;--accent:#3ddc97;--bad:#ff8a80;--good:#5ee2a0;--border:#2b3347;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#10141c;--card:#1a2030;--text:#eef1f7;--muted:#a3adc2;--accent:#3ddc97;--bad:#ff8a80;--good:#5ee2a0;--border:#2b3347;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.55}
+main{max-width:760px;margin:0 auto;padding:16px}
+h1{font-size:1.6rem;margin:8px 0}h2{font-size:1.2rem;margin:0 0 8px}
+.sub{color:var(--muted);margin-top:0}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;margin:14px 0}
+ul{padding-left:20px;margin:6px 0}li{margin:4px 0}
+.email{border:1px dashed var(--border);border-radius:10px;padding:12px;font-size:.95rem;margin:8px 0;overflow-x:auto}
+.email b{color:var(--accent)}
+button{font:inherit;border:1px solid var(--border);background:var(--card);color:var(--text);padding:10px 14px;border-radius:10px;cursor:pointer;margin:4px 6px 4px 0}
+button:hover{border-color:var(--accent)}
+button.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.res{margin-top:8px;font-weight:600}.ok{color:var(--good)}.no{color:var(--bad)}
+.q{margin:14px 0;padding-bottom:10px;border-bottom:1px solid var(--border)}
+.tag{display:inline-block;background:var(--accent);color:#fff;border-radius:99px;padding:2px 10px;font-size:.8rem}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.92rem}th,td{border:1px solid var(--border);padding:8px;text-align:left}
+</style>
+</head>
+<body>
+<main>
+<span class="tag">CodeAlpha Cyber Security - Task 2</span>
+<h1>Phishing Awareness Training</h1>
+<p class="sub">By Zainab Batool, BS Business Data Analytics, COMSATS University Islamabad</p>
+
+<div class="card">
+<h2>1. Phishing kya hai?</h2>
+<p>Phishing ek cyber attack hai jisme attacker khud ko kisi trusted jagah (bank, company, boss, courier, government) ka bana kar email, SMS, call ya fake website se aap ki sensitive information (password, OTP, CNIC, card number) chura leta hai.</p>
+<p><b>Types:</b></p>
+<ul>
+<li><b>Email phishing:</b> bulk fake emails.</li>
+<li><b>Spear phishing:</b> kisi ek khaas person/company ko target karna.</li>
+<li><b>Smishing:</b> SMS ke zariye (jaise "Aap ka account block ho jayega").</li>
+<li><b>Vishing:</b> phone call ke zariye (fake bank officer).</li>
+<li><b>Fake websites / clone pages:</b> asli site jaisa login page.</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>2. Phishing email kaise pehchanen</h2>
+<div class="email">
+<b>From:</b> support@hbl-secure-alerts.com<br>
+<b>Subject:</b> URGENT: Aap ka account 24 ghantay mein block ho jayega!<br><br>
+Dear Customer, hum ne suspicious activity detect ki hai. Abhi niche link par click karke apna ATM PIN aur OTP verify karein: http://hbl-verify-login.xyz/login
+</div>
+<p>Is email mein red flags:</p>
+<ul>
+<li><b>Sender domain galat:</b> asli bank ka domain alag hota hai, ye random domain hai.</li>
+<li><b>Urgency / dhamki:</b> "24 ghantay mein block" - jaldi karwane ke liye.</li>
+<li><b>Generic greeting:</b> "Dear Customer", aap ka naam nahi.</li>
+<li><b>Suspicious link:</b> <code>.xyz</code> domain, bank ka official domain nahi.</li>
+<li><b>Sensitive info mangna:</b> koi bank email par PIN ya OTP nahi mangta.</li>
+<li><b>Spelling/grammar mistakes</b> aur ajeeb design.</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>3. Fake websites kaise pehchanen</h2>
+<div class="scroll"><table>
+<tr><th>Check</th><th>Asli</th><th>Fake</th></tr>
+<tr><td>URL</td><td>paypal.com</td><td>paypa1.com, paypal-login.net</td></tr>
+<tr><td>HTTPS lock</td><td>Hota hai (lekin sirf lock kaafi nahi)</td><td>Fake sites par bhi ho sakta hai</td></tr>
+<tr><td>Design</td><td>Professional</td><td>Blurry logo, errors</td></tr>
+<tr><td>Info</td><td>Normal login</td><td>PIN, OTP, card sab ek page par</td></tr>
+</table></div>
+<p><b>Tip:</b> Link par click karne se pehle us par hover karein (mobile par long press) aur asli URL dekhein.</p>
+</div>
+
+<div class="card">
+<h2>4. Social Engineering tactics</h2>
+<ul>
+<li><b>Urgency:</b> "Abhi karo warna nuksan."</li>
+<li><b>Fear:</b> "Account block / legal action."</li>
+<li><b>Greed:</b> "Aap ne Rs. 50,000 ka inaam jeeta hai" (jaise fake BISP / lucky draw messages).</li>
+<li><b>Authority:</b> boss, bank manager, FIA, police ban kar baat karna.</li>
+<li><b>Trust / familiarity:</b> dost ya colleague ki hacked ID se message.</li>
+<li><b>Pretexting:</b> jhooti kahani bana kar info nikalna (fake courier, fake HR).</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>5. Real-world examples</h2>
+<ul>
+<li><b>Fake easypaisa/JazzCash SMS:</b> "Aap ke account mein galti se paisay aa gaye, wapas bhejein" ya OTP mangna.</li>
+<li><b>Fake courier SMS:</b> "Parcel delivery fail, link par address update karein."</li>
+<li><b>CEO fraud (BEC):</b> boss ke naam se email ke "jaldi payment transfer karein".</li>
+<li><b>2016 Bangladesh Bank heist:</b> fake payment instructions se approx. 81 million USD chori hue (social engineering + malware ka combination).</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>6. Best practices</h2>
+<ul>
+<li>Link par click karne se pehle sender aur URL check karein.</li>
+<li>Bank kabhi OTP/PIN/password email, SMS ya call par nahi mangta.</li>
+<li>Strong, unique passwords + password manager.</li>
+<li><b>2FA / MFA</b> on karein.</li>
+<li>Suspicious attachment (.exe, .zip, macro wali file) na kholen.</li>
+<li>Software aur antivirus update rakhein.</li>
+<li>Shak ho to khud official website/app khol kar ya official helpline par call karke confirm karein.</li>
+<li>Phishing email ko report karein aur delete kar dein. Agar click kar diya to password foran change karein aur bank ko inform karein.</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>7. Interactive Quiz</h2>
+<div id="quiz"></div>
+<button class="primary" id="submitBtn">Score dekhein</button>
+<button id="resetBtn">Dobara karein</button>
+<div class="res" id="score"></div>
+</div>
+
+<div class="card">
+<h2>8. Quick Spot-the-Phish</h2>
+<p>Ye message phishing hai ya legit?</p>
+<div class="email">"Aap ka Daraz parcel deliver nahi ho saka. Address update karne ke liye click karein: http://daraz-pk-parcel.top/update"</div>
+<button onclick="spot(true)">Phishing</button><button onclick="spot(false)">Legit</button>
+<div class="res" id="spot"></div>
+</div>
+</main>
+
+<script>
+var questions=[
+{q:"Email mein likha hai 'Aap ka account 1 ghantay mein block ho jayega'. Ye kaunsi tactic hai?",o:["Urgency / fear","Normal notice","Discount offer"],a:0,e:"Phishers jaldi karwane ke liye dar aur urgency use karte hain."},
+{q:"Bank ka officer call par aap se OTP maangta hai. Aap kya karenge?",o:["OTP de dunga","Call kaat kar official helpline par call karunga","SMS par OTP bhej dunga"],a:1,e:"Asli bank kabhi OTP nahi maangta."},
+{q:"Kaunsa URL sab se zyada suspicious hai?",o:["https://www.hbl.com","https://hbl-secure-login.xyz","https://www.meezanbank.com"],a:1,e:"Random domain aur .xyz extension red flag hai."},
+{q:"Sirf kisi ek specific person ya company ko target karne wala phishing?",o:["Spear phishing","Spam","Smishing"],a:0,e:"Spear phishing personalised hota hai."},
+{q:"HTTPS lock ka matlab kya hai?",o:["Site 100% safe hai","Connection encrypted hai, lekin site fake bhi ho sakti hai","Site government ki hai"],a:1,e:"Fake sites bhi HTTPS use kar sakti hain."},
+{q:"Phishing ke baad se bachne ka sab se behtar extra protection?",o:["Same password har jagah","Two-Factor Authentication (2FA)","Antivirus band karna"],a:1,e:"2FA se password chori hone par bhi account kaafi had tak safe rehta hai."}
+];
+var quizEl=document.getElementById('quiz');
+function render(){
+  quizEl.innerHTML='';
+  questions.forEach(function(item,i){
+    var d=document.createElement('div');d.className='q';
+    var p=document.createElement('div');p.textContent=(i+1)+'. '+item.q;p.style.fontWeight='600';d.appendChild(p);
+    item.o.forEach(function(opt,j){
+      var l=document.createElement('label');l.style.display='block';l.style.margin='4px 0';
+      var r=document.createElement('input');r.type='radio';r.name='q'+i;r.value=j;
+      l.appendChild(r);l.appendChild(document.createTextNode(' '+opt));d.appendChild(l);
+    });
+    var ex=document.createElement('div');ex.id='ex'+i;ex.style.color='var(--muted)';d.appendChild(ex);
+    quizEl.appendChild(d);
+  });
+  document.getElementById('score').textContent='';
+}
+document.getElementById('submitBtn').onclick=function(){
+  var s=0;
+  questions.forEach(function(item,i){
+    var c=document.querySelector('input[name="q'+i+'"]:checked');
+    var ex=document.getElementById('ex'+i);
+    if(c&&parseInt(c.value,10)===item.a){s++;ex.innerHTML='<span class="ok">Sahi.</span> '+item.e;}
+    else{ex.innerHTML='<span class="no">Galat.</span> '+item.e;}
+  });
+  document.getElementById('score').textContent='Score: '+s+' / '+questions.length;
+};
+document.getElementById('resetBtn').onclick=render;
+function spot(g){
+  var el=document.getElementById('spot');
+  el.innerHTML=g?'<span class="ok">Sahi! Phishing hai:</span> fake domain, urgency aur address update ka link.':'<span class="no">Galat.</span> Ye phishing hai: domain daraz.pk ka nahi aur link .top par jata hai.';
+}
+render();
+</script>
+</body>
+</html>
